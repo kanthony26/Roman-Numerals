@@ -1,54 +1,63 @@
-public static void main(String[] args)
-{
-Scanner keyboard = new Scanner(System.in);
+import java.util.Scanner;
+import java.util.Random;
+import static java.lang.System.out;
 
-System.out.prnt("Enter a number in the range of 1 through 10: ");
-
-int number = keyboard.nextInt();
-
-keyboard.close();
-
-String romanNumerals = convertNumberToRomanNumeral (number);
-
-System.out.prntln(romanNumerals);
-}
-
-static String convertNumberToRomanNumeral(integer number)
-{
-  switch (number)
-  {
-  case 1:
-    return "I";
-    
+class RomanNumerals {
+	
+	public static void main(String[] args) {
+	
+	int number;
+	Scanner keyboard = new Scanner(System.in);
+		
+	System.out.print("Enter a number in the range of 1 - 10: ");
+	number = keyboard.nextInt();
+				  
+	switch (number)
+	{
+    case 1:
+        System.out.println("I");
+		break;
+		
     case 2:
-     return "II";
-    
+        System.out.println("II");
+		break;
+		
     case 3:
-      return "III";
-    
+        System.out.println("III");
+		break;
+		
     case 4:
-     return "IV";
-    
+        System.out.println("IV");
+		break;
+		
     case 5:
-     return "V";
-    
+        System.out.println("V");
+		break;
+		
     case 6:
-      return "VI";
-    
+        System.out.println("VI");
+		break;
+		
     case 7:
-      return "VII";
-    
+        System.out.println("VII");
+		break;
+		
     case 8:
-      return "VIII";
-    
+        System.out.println("VIII");
+		break;
+		
     case 9:
-      return "IX";
-    
+        System.out.println("IX");
+		break;
+		
     case 10:
-      return "X";
-    
+        System.out.println("X");
+		break;
+		
     default:
-      return "Invalid number";
-      
-   }
+		System.out.println("Invalid number.");
+		break;
+    }
+	keyboard.close();
+}
 }
